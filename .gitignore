@@ -1,0 +1,75 @@
+# Node.js
+# Verzeichnisse und Dateien, die durch npm oder yarn generiert werden
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React spezifische Dateien
+build/
+.docusaurus/
+.cache/
+dist/
+.eslintcache
+.next/
+out/
+.surge/
+*.log
+
+# Editor-Spezifisches
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# macOS
+.DS_Store
+
+# Andere
+*.swp
+*.bak
+*.tmp
+
+# PHP
+vendor/
+composer.lock
+
+# Logs
+logs/
+*.log
+
+# Cache-Dateien
+cache/
+tmp/
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Verzeichnisse spezifisch für das Backend
+backend/vendor/
+backend/logs/
+backend/cache/
+backend/tmp/
+
+# Verzeichnisse spezifisch für das Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Allgemeine temporäre Dateien
+*.tmp
+*.swp
+*.bak
+*.log
+*.pid
+*.seed
+*.pid.lock

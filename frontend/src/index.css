@@ -1,0 +1,49 @@
+/* Tailwindcss Import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Register fonts */
+@font-face {
+	font-family: "Ubuntu";
+	src: url("/public/fonts/Ubuntu-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("/public/fonts/Ubuntu-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Base class to set the font */
+@layer base {
+	html {
+		font-family: "Ubuntu", sans-serif;
+	}
+}
+
+/* Custom classes for reusable items */
+.button {
+	@apply text-lg font-medium text-center rounded-xl border-[0.5px] border-gray px-4 py-2;
+}
+
+.input {
+	@apply p-2 border-gray rounded-xl border-[0.5px] w-full;
+}
+
+/* classes for the page transition */
+	.page-enter {
+		@apply opacity-0 translate-y-2;
+	}
+	.page-enter-active {
+		@apply opacity-100 translate-y-0 transition-opacity duration-300;
+	}
+	.page-exit {
+		@apply opacity-100 translate-y-0;
+	}
+	.page-exit-active {
+		@apply opacity-0 translate-y-2 transition-opacity duration-300;
+	}
